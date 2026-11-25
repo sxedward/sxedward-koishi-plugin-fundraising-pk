@@ -1,0 +1,32 @@
+{
+  "name": "koishi-plugin-fundraising-pk",
+  "version": "1.0.0",
+  "description": "跨群集资 PK 对抗插件，支持多队伍、多平台项目与时间播报（Koishi v4）",
+  "homepage": "https://github.com/sxedward/koishi-plugin-fundraising-pk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxedward/koishi-plugin-fundraising-pk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sxedward/koishi-plugin-fundraising-pk/issues"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "koishi",
+    "koishi-plugin",
+    "pk",
+    "crowdfunding",
+    "weidian"
+  ],
+  "koishi": {
+    "service": {
+      "required": [
+        "http"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "koishi": "^4.18.0"
+  },
+  "license": "MIT"
+}
