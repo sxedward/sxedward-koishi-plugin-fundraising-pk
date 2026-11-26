@@ -1,4 +1,4 @@
-# koishi-plugin-fundraising-pk
+# @sxedward/koishi-plugin-fundraising-pk
 
 跨群集资 PK 对抗插件，适用于 **Koishi v4**。功能参考 CoolQ 插件 `me.cqp.lyt.grouppk`（集资 PK 3.5）：多队伍、多平台项目汇总计分、倒计时、领先变化与开始/结束播报。计分完全在 Koishi 进程内完成，不依赖原插件的私有鉴权/同步服务器。
 
@@ -7,8 +7,10 @@
 将本目录放入 Koishi 工作区的 `plugins/` 下，或执行：
 
 ```bash
-npm install koishi-plugin-fundraising-pk
+npm install @sxedward/koishi-plugin-fundraising-pk
 ```
+
+旧包名 `koishi-plugin-fundraising-pk` 已弃用，请改用上面的新作用域包；Koishi 控制台可执行 `koishi add sxedward/koishi-plugin-fundraising-pk` 安装。
 
 无需编译（CommonJS）。在 `koishi.yml` 中启用：
 
@@ -61,3 +63,11 @@ plugins:
 - 运行状态保存在 Koishi 工作目录下的 `fundraising-pk-state.json`，重启后保留时间与领先状态。
 - 平台接口可能调整：项目支持 `api` 字段覆盖请求地址、`cookie` 字段提供登录态。返回 JSON 中含 `amount` / `backer_money` / `donation` 与 `backer_count` / `people` 等字段即可解析。
 - 如需与其他插件共用已抓取的数据，可同时安装 `koishi-plugin-weidian-monitor`；两个插件各自独立运行，互不依赖。
+
+## 联系作者
+
+- 邮箱：`sxedward@163.com`
+- QQ：`827679511`
+- GitHub：<https://github.com/sxedward>
+- 问题反馈：<https://github.com/sxedward/sxedward-koishi-plugin-fundraising-pk/issues>
+- 更新日志：[CHANGELOG.md](./CHANGELOG.md)
